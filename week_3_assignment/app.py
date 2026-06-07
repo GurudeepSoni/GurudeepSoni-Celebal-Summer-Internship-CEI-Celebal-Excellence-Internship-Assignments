@@ -12,13 +12,24 @@ st.set_page_config(
     layout="wide"
 )
 
+# -------------------------
+# File Paths (Deployment Safe)
+# -------------------------
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+classifier_path = os.path.join(BASE_DIR, "country_classifier.pkl")
+segmenter_path = os.path.join(BASE_DIR, "country_segmenter.pkl")
+scaler_path = os.path.join(BASE_DIR, "scaler.pkl")
+data_path = os.path.join(BASE_DIR, "Country-data.csv")
+
 # Load Models
-classifier = joblib.load("country_classifier.pkl")
-segmenter = joblib.load("country_segmenter.pkl")
-scaler = joblib.load("scaler.pkl")
+classifier = joblib.load(classifier_path)
+segmenter = joblib.load(segmenter_path)
+scaler = joblib.load(scaler_path)
 
 # Load Dataset
-df = pd.read_csv("Country-data.csv")
+df = pd.read_csv(data_path)
 
 # Store Prediction History
 if "history" not in st.session_state:
