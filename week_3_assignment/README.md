@@ -4,13 +4,25 @@
 
 This project was developed as part of the Celebal Technologies Internship Program.
 
-The objective of the project is to predict the development status of a country and group similar countries using machine learning techniques.
+The objective of this project is to predict the development status of a country and group similar countries using machine learning techniques.
 
-The project includes data preprocessing, exploratory data analysis (EDA), classification, clustering, model saving, and deployment using Streamlit.
+The project covers data preprocessing, exploratory data analysis (EDA), classification, clustering, model saving, and deployment using Streamlit.
+
+---
+
+## Live Application
+
+Streamlit App:
+
+https://country-check08.streamlit.app/
 
 ---
 
 ## Dataset
+
+Dataset used in this project:
+
+Country-data.csv
 
 The dataset contains socio-economic and health indicators of different countries.
 
@@ -33,6 +45,8 @@ The dataset contains socio-economic and health indicators of different countries
 ### Classification
 
 Random Forest Classifier was used to predict the development status of a country.
+
+**Model Accuracy: 94.12%**
 
 ### Clustering
 
@@ -104,26 +118,34 @@ Install Dependencies:
 
 pip install -r requirements.txt
 
-Run Streamlit App:
+Run Application:
 
 streamlit run app.py
 
 ---
 
-## Output
+## Application Features
 
-The application allows users to:
+* Predict Country Development Status
+* Country Segmentation using K-Means
+* Interactive Streamlit Interface
+* Prediction History Tracking
+* Download Prediction History
 
-* Enter country indicators
-* Predict development status
-* View cluster assignment
-* Store prediction history
-* Download prediction history
+---
+
+## Deployment
+
+The application is deployed using Streamlit Community Cloud.
+
+Live URL:
+
+https://country-check08.streamlit.app/
 
 ---
 
 ## Developed By
 
-Gurudeep Soni
+**Gurudeep Soni**
 
 Celebal Technologies Internship Project
